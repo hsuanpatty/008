@@ -64,7 +64,7 @@
                 <a href="https://www.artisan.com.tw/">
                   <picture>
                     <source media="(max-width: 768px)" srcset="/images/logo_m.png" />
-                    <img src="./images/logo.png" alt="logo" class="logo-w" />
+                    <img src="/images/logo.png" alt="logo" class="logo-w" />
                   </picture>
                 </a>
               </div>
@@ -1892,15 +1892,36 @@
             $("#" + tabId).show(); // 顯示對應 group
 
             // 標籤樣式切換
-            $(".Exhibition_otherAreas_link a").removeClass("checked"); // 清掉全部
-            $(this).addClass("checked"); // 點哪個亮哪個
+            $(".Exhibition_otherAreas_link a").removeClass("checked");
+            $(this).addClass("checked");
+
+            // 手機版滑動到內容區
+            if ($(window).width() < 768) {
+              // 假設小於 768px 為手機
+              $("html, body").animate(
+                {
+                  scrollTop: $("#" + tabId).offset().top - 80, // 80 可調整偏移
+                },
+                400,
+              );
+            }
           });
 
           // 點全選
           $("#SelectAll").click(function () {
-            $(".Exhibition_filter_group").show(); // 顯示全部內容
-            $(".Exhibition_otherAreas_link a").removeClass("checked"); // 先清掉全部
-            $(this).addClass("checked"); // 只有全選亮
+            $(".Exhibition_filter_group").show();
+            $(".Exhibition_otherAreas_link a").removeClass("checked");
+            $(this).addClass("checked");
+
+            // 手機版滑動到內容區
+            if ($(window).width() < 768) {
+              $("html, body").animate(
+                {
+                  scrollTop: $(".Exhibition_filter_group").first().offset().top - 80,
+                },
+                400,
+              );
+            }
           });
         });
       </script>
