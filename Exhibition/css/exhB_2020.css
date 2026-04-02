@@ -35,7 +35,7 @@
     font-weight: bolder;
     margin: 8px 0;
     letter-spacing: .3rem;
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 
 
@@ -163,7 +163,36 @@ ul.search-title li a:hover {
     color: #8c001a;
 }
 
+#search-tool {
+    border: solid 1px #5a5a5a;
+    border-radius: 20px;
+    margin: 0 5%;
+    padding: 5px 15px;
+    line-height: 21px;
+    font-size: .875rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: #767676;
+    font-weight: bold;
+    background: #fff;
 
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    #search-tool {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #search-tool {
+        border: none;
+        background: transparent;
+        border-radius: 0;
+        padding: 5px 0;
+    }
+}
 
 .searchBox-area {
     width: 30%;
@@ -223,7 +252,7 @@ img.searchBox-area-icon {
 #search-tool select {
     border: 1px solid #ccc;
     border-radius: 0;
-    background: url(../images/20_arrow.png) no-repeat scroll 95% center #fff;
+    background: url(https://www.artisan.com.tw/images/20_arrow.png) no-repeat scroll 95% center #fff;
     -webkit-appearance: none;
     color: #333;
     padding: 0 5px;
@@ -382,7 +411,6 @@ figure.Exh-SpecialEvent-box a {
 .Exhibition_filter_group h1 p {
     width: calc(100% - 75px);
     display: inline-block;
-    margin-bottom: 0;
 }
 
 .Exhibition_filter_group h1 p:after {
@@ -390,7 +418,7 @@ figure.Exh-SpecialEvent-box a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(../images/20_Exhibition_filter_TitleIcon.png);
+    background-image: url(https://www.artisan.com.tw/images/20_Exhibition_filter_TitleIcon.png);
     background-size: cover;
     margin-left: 8px;
     vertical-align: middle;
