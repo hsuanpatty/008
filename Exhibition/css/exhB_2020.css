@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* CSS Document */
-
-
 /*============== 麵包屑 ==============*/
 
 .Exh-navigate {
@@ -14,6 +11,7 @@
 
 .Exh-navigate a {
     text-decoration: underline;
+    text-underline-offset: 5px;
     color: #000;
 }
 
@@ -48,7 +46,6 @@
     letter-spacing: .3rem;
     font-size: 2.6rem;
 }
-
 
 /*============== Exhibition_filter_head 地區篩選列 ==============*/
 
@@ -90,13 +87,6 @@
     display: inline-block;
     transition: .2s;
 }
-
-
-/*.Exhibition_otherAreas_link a:hover{
-    background-color: #e37989;
-    color: #FFF;
-    border: 0.5px solid #e37989;
-}*/
 
 .Exhibition_otherAreas_link a.checked {
     background-color: #e37989;
@@ -298,7 +288,6 @@ img.searchBox-area-icon {
     color: #8c001a;
 }
 
-
 /*============== ExhMiniHotSale ==============*/
 
 #ExhSpecialEvent {
@@ -359,12 +348,6 @@ figure.Exh-SpecialEvent-box img {
     transition: .5s;
 }
 
-
-/*hover到會有陰影
-figure.Exh-SpecialEvent-box:hover img{
-    box-shadow: 0 0 5px 2px #bdbdbd;
-}*/
-
 figure.Exh-SpecialEvent-box p {
     height: 40px;
     color: #767676;
@@ -399,7 +382,6 @@ figure.Exh-SpecialEvent-box a {
     right: 0;
     z-index: 1;
 }
-
 
 /*============== Exhibition_filter 大館行程 ==============*/
 
