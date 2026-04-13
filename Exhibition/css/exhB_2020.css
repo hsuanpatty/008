@@ -6,7 +6,7 @@
 /*============== 麵包屑 ==============*/
 
 .Exh-navigate {
-    padding-top: 110px;
+    padding-top: 130px;
     margin: 20px 0;
     font-size: .875rem;
     color: #0c02de;
@@ -23,6 +23,17 @@
     margin-left: 6px;
 }
 
+@media (max-width: 991.98px) { 
+    .Exh-navigate {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 769.98px) { 
+    .Exh-navigate {
+        padding-top: 65px;
+    }
+}
 
 /*============== Exhibition_title 大館大標 ==============*/
 
@@ -97,7 +108,6 @@
     display: block;
     font-size: 1rem;
 }
-
 
 /*============== Search ==============*/
 
